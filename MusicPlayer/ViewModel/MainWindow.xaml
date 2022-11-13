@@ -1,0 +1,97 @@
+﻿<Window x:Class="MusicPlayer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MusicPlayer"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        Title="MPlay" Height="520" Width="300" Icon="/MusicPlayer;component/resources/music_icon.ico" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen" Background="Black">
+    <Window.Resources>
+        <Image x:Key="Play" Source="C:\Users\Aleksandr\Documents\учеба\Заманов\MusicPlayer\MusicPlayer\resources\play_icon.png" Height="22" Width="22" />
+        <Image x:Key="Stop" Source="C:\Users\Aleksandr\Documents\учеба\Заманов\MusicPlayer\MusicPlayer\resources\pause_icon.png" Height="22" Width="22"/>
+    </Window.Resources>
+    <Grid>
+        <materialDesign:Card>
+            <TabControl
+                HorizontalContentAlignment="Center"
+                materialDesign:ColorZoneAssist.Mode="Dark"
+                materialDesign:NavigationRailAssist.SelectionCornerRadius="50"
+                materialDesign:NavigationRailAssist.ShowSelectionBackground="True"
+                Style="{StaticResource MaterialDesignNavigationRailTabControl}"
+                TabStripPlacement="Bottom" BorderBrush="#FF060606">
+                <TabItem
+                    Margin="4">
+                    <TabItem.Header>
+                        <StackPanel
+                            Width="auto"
+                            Height="auto">
+                            <materialDesign:PackIcon
+                                Width="24"
+                                Height="24"
+                                HorizontalAlignment="Center"
+                                Kind="Album" />
+                            <TextBlock
+                                HorizontalAlignment="Center"
+                                Text="Play" />
+                        </StackPanel>
+                    </TabItem.Header>
+                    <StackPanel
+                        Width="auto"
+                        Height="auto" Background="Black">
+                        <Image Name="ImageTrack" Height="200" Width="200" Margin="0,40,0,0" Source="/resources/document_black_music_icon.png"/>
+                        <TextBlock Name ="MusicName" HorizontalAlignment="Center" Margin="0,10,0,0" TextWrapping="Wrap" Width="180" Foreground="#DDFFFFFF" Height="25" Style="{StaticResource MaterialDesignHeadline6TextBlock}" FontSize="16" TextAlignment="Center"/>
+                        <Slider Name ="Slider_Music" Margin="0,15,0,0" Minimum="0" Maximum="100" Height="30" Width="250" Foreground="White" ValueChanged="Slider_ValueChanged" Thumb.DragStarted="Slider_DragStarted" Thumb.DragCompleted="Slider_DragCompleted"/>
+                        <Button Name="PlayButt" Click="cmd_Play_Click" Margin="0,0,0,0" Height="56" Background="{x:Null}" BorderBrush="{x:Null}" Width="60">
+                            <DynamicResource ResourceKey="Play"/>
+                        </Button>
+                    </StackPanel>
+                </TabItem>
+                <TabItem
+                    Margin="4">
+                    <TabItem.Header>
+                        <StackPanel
+                            Width="auto"
+                            Height="auto">
+                            <materialDesign:PackIcon
+                                Width="24"
+                                Height="24"
+                                HorizontalAlignment="Center"
+                                Kind="Text" />
+                            <TextBlock
+                                HorizontalAlignment="Center"
+                                Text="Text" />
+                        </StackPanel>
+                    </TabItem.Header>
+                    <StackPanel
+                        Width="auto"
+                        Height="auto" Background="Black">
+
+                    </StackPanel>
+                </TabItem>
+                <TabItem
+                    Margin="4">
+                    <TabItem.Header>
+                        <StackPanel
+                            Width="auto"
+                            Height="auto">
+                            <materialDesign:PackIcon
+                                Width="24"
+                                Height="24"
+                                HorizontalAlignment="Center"
+                                Kind="Comment" />
+                            <TextBlock
+                                HorizontalAlignment="Center"
+                                Text="Reviews" />
+                        </StackPanel>
+                    </TabItem.Header>
+                    <StackPanel
+                        Width="auto"
+                        Height="auto" Background="Black">
+
+                    </StackPanel>
+                </TabItem>
+            </TabControl>
+        </materialDesign:Card>
+    </Grid>
+</Window>
