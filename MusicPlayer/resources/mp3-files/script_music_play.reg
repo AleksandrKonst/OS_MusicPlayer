@@ -1,0 +1,3 @@
+Windows Registry Editor Version 5.00
+[HKEY_CLASSES_ROOT\.mp3\shell\Открыть с помощью MPLay\command]
+@="\"C:\\Users\\Aleksandr\\Documents\\учеба\\Заманов\\MusicPlayer\\MusicPlayer\\bin\\Debug\\MusicPlayer.exe\" \"%1\""
