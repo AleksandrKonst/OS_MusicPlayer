@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MPlayWebAPI", "MPlayWebAPI\MPlayWebAPI.csproj", "{E8C522EB-96B2-4FCC-955F-96613E3DEDCA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E8C522EB-96B2-4FCC-955F-96613E3DEDCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8C522EB-96B2-4FCC-955F-96613E3DEDCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8C522EB-96B2-4FCC-955F-96613E3DEDCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8C522EB-96B2-4FCC-955F-96613E3DEDCA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A937E62F-271D-45A4-A569-1A0BBAD1C74C}
+	EndGlobalSection
+EndGlobal
