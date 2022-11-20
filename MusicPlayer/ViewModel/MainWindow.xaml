@@ -10,6 +10,26 @@
     <Window.Resources>
         <Image x:Key="Play" Source="C:\Users\Aleksandr\Documents\учеба\Заманов\MusicPlayer\MusicPlayer\resources\play_icon.png" Height="22" Width="22" />
         <Image x:Key="Stop" Source="C:\Users\Aleksandr\Documents\учеба\Заманов\MusicPlayer\MusicPlayer\resources\pause_icon.png" Height="22" Width="22"/>
+        <Style x:Key="Grid1" TargetType="Grid">
+            <Setter Property="Background" Value="#FF1F1F1F" />
+            <Setter Property="Width" Value="200" />
+            <Setter Property="Height" Value="auto" />
+            <Setter Property="HorizontalAlignment" Value="Left" />
+            <Setter Property="VerticalAlignment" Value="Top" />
+            <Setter Property="Margin" Value="10,5,0,0" />
+        </Style>
+        <Style x:Key="Text1" TargetType="TextBlock">
+            <Setter Property="TextWrapping" Value="Wrap" />
+            <Setter Property="FontSize" Value="14" />
+            <Setter Property="TextAlignment" Value="Center" />
+            <Setter Property="Background" Value="#FF1F1F1F" />
+            <Setter Property="Foreground" Value="#DDFFFFFF" />
+            <Setter Property="Width" Value="auto" />
+            <Setter Property="Height" Value="auto" />
+            <Setter Property="HorizontalAlignment" Value="Left" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+            <Setter Property="Margin" Value="20,10,20,10" />
+        </Style>
     </Window.Resources>
     <Grid>
         <materialDesign:Card>
@@ -66,7 +86,9 @@
                     <StackPanel
                         Width="auto"
                         Height="auto" Background="Black">
-
+                        <ScrollViewer Height="390" VerticalScrollBarVisibility="Visible" Margin="0,5,-20,0">
+                            <TextBlock Text="No connection" Name ="TextSong" HorizontalAlignment="Center" TextWrapping="Wrap" Width="255" Foreground="#DDFFFFFF" Style="{StaticResource MaterialDesignHeadline6TextBlock}" FontSize="14" TextAlignment="Center"/>
+                        </ScrollViewer>
                     </StackPanel>
                 </TabItem>
                 <TabItem
@@ -88,7 +110,26 @@
                     <StackPanel
                         Width="auto"
                         Height="auto" Background="Black">
+                        <ScrollViewer Height="336" VerticalScrollBarVisibility="Visible" Margin="0,5,-20,0">
+                            <StackPanel Name="CommentGrid">
 
+                            </StackPanel>
+                        </ScrollViewer>
+                        <Grid Margin="0,10,0,14">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="230"></ColumnDefinition>
+                                <ColumnDefinition></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <TextBox Name="SendText" TextWrapping="NoWrap" MaxLength="60" materialDesign:HintAssist.Hint=" Введите текст" Foreground="#DDFFFFFF" Background="#FF1D1D1D" TextAlignment="Left" Margin="10,0,0,0" Grid.RowSpan="1"/>
+                            <Button Grid.Column="1" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}" Margin="0,0,5,0" Click="Button_Click">
+                                <materialDesign:PackIcon
+                                Width="20"
+                                Height="20"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Top"
+                                Kind="Send" Foreground="White" />
+                            </Button>
+                        </Grid>
                     </StackPanel>
                 </TabItem>
             </TabControl>
