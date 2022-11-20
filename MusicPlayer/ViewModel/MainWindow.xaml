@@ -8,8 +8,8 @@
         mc:Ignorable="d"
         Title="MPlay" Height="520" Width="300" Icon="/MusicPlayer;component/resources/music_icon.ico" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen" Background="Black">
     <Window.Resources>
-        <Image x:Key="Play" Source="C:\Users\Aleksandr\Documents\учеба\Заманов\MusicPlayer\MusicPlayer\resources\play_icon.png" Height="22" Width="22" />
-        <Image x:Key="Stop" Source="C:\Users\Aleksandr\Documents\учеба\Заманов\MusicPlayer\MusicPlayer\resources\pause_icon.png" Height="22" Width="22"/>
+        <Image x:Key="Play" Source="/resources/play_icon.png" Height="22" Width="22" />
+        <Image x:Key="Stop" Source="/resources/pause_icon.png" Height="22" Width="22"/>
         <Style x:Key="Grid1" TargetType="Grid">
             <Setter Property="Background" Value="#FF1F1F1F" />
             <Setter Property="Width" Value="200" />
@@ -62,7 +62,7 @@
                         <Image Name="ImageTrack" Height="200" Width="200" Margin="0,40,0,0" Source="/resources/document_black_music_icon.png"/>
                         <TextBlock Name ="MusicName" HorizontalAlignment="Center" Margin="0,10,0,0" TextWrapping="Wrap" Width="180" Foreground="#DDFFFFFF" Height="25" Style="{StaticResource MaterialDesignHeadline6TextBlock}" FontSize="16" TextAlignment="Center"/>
                         <Slider Name ="Slider_Music" Margin="0,15,0,0" Minimum="0" Maximum="100" Height="30" Width="250" Foreground="White" ValueChanged="Slider_ValueChanged" Thumb.DragStarted="Slider_DragStarted" Thumb.DragCompleted="Slider_DragCompleted"/>
-                        <Button Name="PlayButt" Click="cmd_Play_Click" Margin="0,0,0,0" Height="56" Background="{x:Null}" BorderBrush="{x:Null}" Width="60">
+                        <Button Name="PlayButt" Click="cmd_Play_Click" Margin="0,0,0,0" Height="56" Background="{x:Null}" BorderBrush="{x:Null}" Width="60" Cursor="Hand">
                             <DynamicResource ResourceKey="Play"/>
                         </Button>
                     </StackPanel>

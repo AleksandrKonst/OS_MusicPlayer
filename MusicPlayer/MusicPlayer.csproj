@@ -205,7 +205,6 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
-    <None Include="resources\mp3-files\script_music_play.reg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -220,9 +219,7 @@
   <ItemGroup>
     <Resource Include="resources\document_black_music_icon.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Resource Include="music_icon.ico" />
     <Content Include="resources\mp3-files\The Beatles - Come Together.mp3" />
