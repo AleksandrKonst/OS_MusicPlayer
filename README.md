@@ -8,3 +8,12 @@
 # Song reviews
 
 ![image](https://user-images.githubusercontent.com/40522320/202920860-d40d7839-bc33-4e0c-9bf2-860b8d565063.png)
+
+# Установщик
+
+![image](https://github.com/AleksandrKonst/OS_MusicPlayer/assets/40522320/df7d1fa5-32ef-4896-88aa-4321cd2fbcd6)
+
+# Запуск плеера
+Запуск плеера через контекстное меню
+
+![image](https://github.com/AleksandrKonst/OS_MusicPlayer/assets/40522320/eadf821e-d353-4a5f-affa-75af93076aa5)
